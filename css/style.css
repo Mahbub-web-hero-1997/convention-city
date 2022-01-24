@@ -1,3 +1,25 @@
+/* Boogle fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+/* some style here */
+.svg_background{
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    background:#5243c269;
+}
+.button_sizing{
+    background: #f7f0f3;
+    color: #3F87F5; 
+    width: 100%;  
+}
+.package_background{
+    background:#3F87F5;
+    border-radius: 24px;
+    margin-top: -70px;
+   box-shadow: 1px 3px 5px gray;    
+}
+/* Simple media */
 @media (max-width:576px) {
     .carousel_title{
         font-size: 12px;      
