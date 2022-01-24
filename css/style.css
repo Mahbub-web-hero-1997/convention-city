@@ -1,10 +1,11 @@
-/* Boogle fonts import */
+/* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+/* some style here */
 
 body{
     font-family: 'Poppins', sans-serif;
 }
-/* some style here */
 .svg_background{
     width: 20px;
     height: 20px;
@@ -28,6 +29,9 @@ body{
     bottom: 100%;
     left: 90%;    
 }
+
+
+
 /* Simple media */
 @media (max-width:576px) {
     .carousel_title{
@@ -47,7 +51,6 @@ body{
     .extraSmall-device{
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-       
+        align-items: center;      
     }
 }
