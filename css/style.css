@@ -19,6 +19,12 @@
     margin-top: -70px;
    box-shadow: 1px 3px 5px gray;    
 }
+#badge_position{
+    margin: -17px;
+    top: 0%;
+    bottom: 100%;
+    left: 90%;    
+}
 /* Simple media */
 @media (max-width:576px) {
     .carousel_title{
@@ -39,5 +45,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+       
     }
 }

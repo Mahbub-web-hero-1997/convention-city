@@ -136,11 +136,8 @@
                             your vision
                             to reality.</p>
                         <button type="button" class="btn btn-close-white border-2 shadow-lg
-                            btn-outline-light fw-normal" id="liveToastBtn">
-
-                            Explore
-                            Now</button>
-
+                            btn-outline-light fw-normal" id="liveToastBtn"> Explore Now <i
+                                class="far fa-long-arrow-right"></i></button>
                         <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
                             <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                                 <div class="toast-header">
@@ -245,11 +242,13 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-12 position-relative ps-0">
 
-                    <div class="package_background text-white bg-primary p-3 pt-5 rounded-5  ">
-                        <span
-                            class="position-absolute position-md top-0 end-0 translate-middle p-2 bg-danger rounded-pill">
-                            <span class="">Hot</span>
+                    <div class="package_background text-white bg-primary p-3 pt-5 rounded-5 position-relative ">
+
+                        <span id="badge_position"
+                            class="position-absolute translate-middle-x bg-danger border border-light rounded-pill translate-middle-x px-1 py-1 w-25 text-center">
+                            <span class="mb-5">Hot</span>
                         </span>
+
                         <h2 class="fw-bold">$800</h2>
                         <h3 class="fw-bold pt-4">Wedding plus</h3>
                         <p class="fs-5">For most weddings with premium plans</p>
@@ -383,8 +382,8 @@
         <!-- Quastions section  -->
         <section class="container mt-5">
             <h1 class=" fs-4 fw-bold mb-5 text-center mx-auto w-75">Frequently Asked Questions</h1>
-            <div class=" extraSmall-device d-flex justify-content-between  align-items-center mb-5 px-3">
-                <div class="w-75 mb-sm-1 pe-2">
+            <div class=" extraSmall-device d-flex justify-content-between  align-items-center mb-5 px-3 py-sm-5">
+                <div class="w-75 mb-sm-1 pe-2 mb-3">
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
@@ -443,12 +442,26 @@
                     <img class="img-fluid " src="images/people.png" alt="">
                 </div>
             </div>
-
         </section>
-
-
     </main>
-
+    <!-- footer aria -->
+    <section class="container-fluid bg-dark h-100 d-flex justify-content-between p-5">
+        <div class="py-5">
+            <small class="text-white fw-light"> &copy; 2020 bike. All rights reserved</small>
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-end h-100 me-5">
+            <h4 class=" text-white fs-4 me-4 mb-3 fw-light">Get the app</h4>
+            <div class="mb-2"><a href="https://play.google.com/store/apps/details?id=com.konasl.nagad&hl=en&gl=US"
+                    target="__blank">
+                    <img src="icons/google-play.png" alt="">
+                </a></div>
+            <div class="mt-2">
+                <a href="https://apps.apple.com/us/app/bkash/id1351183172" target="__blank">
+                    <img src="icons/app-store.png" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
 
 
 
