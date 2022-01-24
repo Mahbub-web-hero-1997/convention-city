@@ -135,8 +135,26 @@
                             let's bring
                             your vision
                             to reality.</p>
-                        <a href="https://www.bashundharaconvention.com/" target="__blank" class="btn btn-close-white border-2 shadow-lg
-                                btn-outline-light fw-normal">Explore Now</a>
+                        <button type="button" class="btn btn-close-white border-2 shadow-lg
+                            btn-outline-light fw-normal" id="liveToastBtn">
+
+                            Explore
+                            Now</button>
+
+                        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="toast-header">
+                                    <img src="icons/Vector.svg" class="rounded me-2" alt="...">
+                                    <strong class="me-auto">Convention City</strong>
+                                    <small>4 mins ago</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="toast-body">
+                                    25% off!!
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -311,7 +329,7 @@
                 </div>
             </div>
         </section>
-        <!-- Clients Reviews section -->
+        <!--  Reviews section -->
         <section class="container">
             <h1 class="fs-1 text-center fw-bold w-75 mx-auto my-5 pb-3">Clients Reviews</h1>
             <div class="row gy-3">
@@ -359,13 +377,14 @@
                 </div>
             </div>
             </div>
+
         </section>
 
         <!-- Quastions section  -->
         <section class="container mt-5">
             <h1 class=" fs-4 fw-bold mb-5 text-center mx-auto w-75">Frequently Asked Questions</h1>
-            <div class=" extraSmall-device d-flex flex-sm-column justify-content-between  align-items-center mb-5 px-3">
-                <div class="w-75 mb-sm-1">
+            <div class=" extraSmall-device d-flex justify-content-between  align-items-center mb-5 px-3">
+                <div class="w-75 mb-sm-1 pe-2">
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
@@ -440,8 +459,22 @@
 
 
 
+
+
+
     <!-- Js Bundle -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        var toastTrigger = document.getElementById('liveToastBtn')
+        var toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', function () {
+                var toast = new bootstrap.Toast(toastLiveExample)
+
+                toast.show()
+            })
+        }
+    </script>
 </body>
 
 </html>
